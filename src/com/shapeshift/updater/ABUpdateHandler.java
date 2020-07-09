@@ -1,4 +1,4 @@
-package com.statix.updater;
+package com.shapeshift.updater;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -9,9 +9,9 @@ import android.util.Log;
 import java.io.File;
 import java.io.IOException;
 
-import com.statix.updater.misc.Constants;
-import com.statix.updater.misc.Utilities;
-import com.statix.updater.model.ABUpdate;
+import com.shapeshift.updater.misc.Constants;
+import com.shapeshift.updater.misc.Utilities;
+import com.shapeshift.updater.model.ABUpdate;
 
 class ABUpdateHandler {
 

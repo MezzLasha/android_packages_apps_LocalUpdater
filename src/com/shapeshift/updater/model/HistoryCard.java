@@ -1,4 +1,4 @@
-package com.statix.updater.model;
+package com.shapeshift.updater.model;
 
 public class HistoryCard implements Comparable {
 

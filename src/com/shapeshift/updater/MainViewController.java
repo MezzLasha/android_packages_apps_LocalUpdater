@@ -1,4 +1,4 @@
-package com.statix.updater;
+package com.shapeshift.updater;
 
 import android.content.Context;
 import android.os.Handler;
@@ -6,7 +6,7 @@ import android.os.PowerManager;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.statix.updater.model.ABUpdate;
+import com.shapeshift.updater.model.ABUpdate;
 
 import java.util.ArrayList;
 import java.util.List;

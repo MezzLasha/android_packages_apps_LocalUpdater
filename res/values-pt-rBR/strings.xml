@@ -2,7 +2,7 @@
     <string name="app_name">Atualizador</string>
     <string name="action_settings">Configurações</string>
 
-    <string name="welcome">StatiXOS</string>
+    <string name="welcome">ShapeshiftOS</string>
     <string name="select_update">Selecionar atualização</string>
     <string name="pause_update">Pausar atualização</string>
     <string name="resume_update">Continuar atualização</string>

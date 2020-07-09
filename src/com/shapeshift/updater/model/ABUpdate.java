@@ -1,4 +1,4 @@
-package com.statix.updater.model;
+package com.shapeshift.updater.model;
 
 import java.io.File;
 import java.io.Serializable;

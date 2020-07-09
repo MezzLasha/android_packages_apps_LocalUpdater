@@ -1,14 +1,14 @@
-package com.statix.updater.misc;
+package com.shapeshift.updater.misc;
 
 public class Constants {
 
     // Data constants
-    public static final String UPDATE_INTERNAL_DIR = "/data/statix_updates/";
+    public static final String UPDATE_INTERNAL_DIR = "/data/shapeshift_updates/";
 
     // Update constants
-    public static String DEVICE_PROP = "ro.statix.device";
-    public static String STATIX_VERSION_PROP = "ro.statix.version";
-    public static String STATIX_BUILD_TYPE_PROP = "ro.statix.buildtype";
+    public static String DEVICE_PROP = "ro.shapeshift.device";
+    public static String SHAPESHIFT_VERSION_PROP = "ro.shapeshift.version";
+    public static String SHAPESHIFT_BUILD_TYPE_PROP = "ro.shapeshift.buildtype";
 
     // Status constants
     public static final int UPDATE_FINALIZING = 0;

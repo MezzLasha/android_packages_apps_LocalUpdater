@@ -1,10 +1,10 @@
-package com.statix.updater;
+package com.shapeshift.updater;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.statix.updater.misc.Utilities;
+import com.shapeshift.updater.misc.Utilities;
 
 public class PreferenceReceiver extends BroadcastReceiver {
     @Override

@@ -1,9 +1,9 @@
-package com.statix.updater;
+package com.shapeshift.updater;
 
-import static com.statix.updater.misc.Constants.PREF_INSTALLED_AB;
-import static com.statix.updater.misc.Constants.PREF_INSTALLING_AB;
-import static com.statix.updater.misc.Constants.PREF_INSTALLING_SUSPENDED_AB;
-import static com.statix.updater.misc.Constants.ENABLE_AB_PERF_MODE;
+import static com.shapeshift.updater.misc.Constants.PREF_INSTALLED_AB;
+import static com.shapeshift.updater.misc.Constants.PREF_INSTALLING_AB;
+import static com.shapeshift.updater.misc.Constants.PREF_INSTALLING_SUSPENDED_AB;
+import static com.shapeshift.updater.misc.Constants.ENABLE_AB_PERF_MODE;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,11 +23,11 @@ import android.widget.ProgressBar;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.statix.updater.history.HistoryUtils;
-import com.statix.updater.history.HistoryView;
-import com.statix.updater.misc.Constants;
-import com.statix.updater.misc.Utilities;
-import com.statix.updater.model.ABUpdate;
+import com.shapeshift.updater.history.HistoryUtils;
+import com.shapeshift.updater.history.HistoryView;
+import com.shapeshift.updater.misc.Constants;
+import com.shapeshift.updater.misc.Utilities;
+import com.shapeshift.updater.model.ABUpdate;
 
 import org.json.JSONException;
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements MainViewControlle
         mCurrentVersionView = (TextView) findViewById(R.id.current_version_view);
         mUpdateProgressText = (TextView) findViewById(R.id.progressText);
         mUpdateSize = (TextView) findViewById(R.id.update_size);
-        mCurrentVersionView.setText(getString(R.string.current_version, SystemProperties.get(Constants.STATIX_VERSION_PROP)));
+        mCurrentVersionView.setText(getString(R.string.current_version, SystemProperties.get(Constants.SHAPESHIFT_VERSION_PROP)));
         mHistory.setOnClickListener(v -> {
             Log.d(TAG, "History imagebutton clicked");
             Intent histIntent = new Intent(getApplicationContext(), HistoryView.class);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements MainViewControlle
         // set up prefs
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
-        // check for updoots in /sdcard/statix_updates
+        // check for updoots in /sdcard/shapeshift_updates
         mUpdate = Utilities.checkForUpdates(getApplicationContext());
 
         mUpdateControl.setOnClickListener(v -> {
